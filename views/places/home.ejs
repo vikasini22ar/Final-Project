@@ -1,0 +1,53 @@
+<%- include("../partials/header" )%>
+<!-- starting of header content -->
+<div class="headcontent">
+    <div class="img-top">
+        <img id="img-content" src="/img/home-illustration.svg">
+    </div>
+    <div class="main text-white">
+        <p id="main-1">Sometimes, what matters is to pick your bags and get on a car and travel NON-STOP.</p>
+        <p id="main-2">Explore! The World is Not Enough</p>
+    </div>
+</div>
+<!-- starting of header content-end -->
+<!-- starting of ruler content -->
+    <div class="ruler">
+        <a type="button"  class="btn btnmode selected" href="/places/home/visited">MY VISITED PLACES</a>
+        <a type="button" class="btn btnmode unselected" href="/places/home/bucket">MY BUCKET LIST</a>
+    </div>
+    <!-- starting of ruler content-end -->
+<!-- Start-contentof places page -->
+<div class="section">
+<% if(currentMode){%>
+     <p id="mode" >My Visited Places <a type="button" href="/places/new" class="float-right btn" id="addplace">ADD PLACE</a></p>
+     <%}else{%>
+        <p id="mode" >My Bucket Places <a type="button" href="/places/new" class="float-right btn" id="addplace">ADD PLACE</a></p>
+        <%}%>
+        <div class="row align-items-center"></div>    
+        <% if(places[0]){%>
+            <% places.forEach(function(place){%>
+                <a href="/places/<%=place._id%>/edit">
+                <div class="col-md-3 col-sm-6 card-maker ">
+                    <div class="img-thumbnail">
+                        <img class=" card" src="<%=place.image%>">
+                        <p class="text-center place-img"><%=place.name%></p>
+                        <p class="text-center date"><%=place.date%></p>
+                    </div>
+                   
+                </div>
+            </a>
+            <%})%>
+            <%}else{%>
+                <div class="text-center">
+                <h4>No Places to Show</h4>
+            </div>
+            <%}%>
+        </div>
+    </div>
+
+
+<!-- END-contentof places page -->
+
+
+
+<%- include("../partials/footer" )%>

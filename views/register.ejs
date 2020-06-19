@@ -1,0 +1,61 @@
+<%- include("partials/header" )%>
+<div class="container">
+   <div>
+    <img src="login-header.svg">
+    <!-- <div class="row login"> -->
+
+   </div>
+    <div class="row login">
+
+    
+    <!-- <div class="box"> -->
+        <!-- </div> -->
+        <div class="col-md-6 formpad">
+            <form class="formlog controlog" action="/login/user" method="POST">
+                <span><h3>Login</h3></span>
+                <div class="form-group">
+                <input id="username" class="form-control controlog" type="text" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <input class="form-control controlog" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-dark form-control controlog ">
+                        LOG IN
+                    </button>
+                </div>
+            </form>
+        </div>
+            <div class="col-md-6 bordercol formpad">
+                        <form class="formlog" name="myform"  action="/register" method="POST" onsubmit="return validateform()">
+                            <div class="form-group">
+                                <p>If you don't already have an account register to create your account.</p>
+                                <input class="form-control controlog" type="text" name="name" placeholder="Your Name" >
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control controlog" type="email" name="email" placeholder="Email Id" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control controlog" type="tel" name="phone" placeholder="Phone No" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control controlog" type="text" name="username" placeholder="Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control controlog" type="password" name="password" placeholder="password" required>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-dark form-control controlog ">
+                                    REGISTER
+                                </button>
+                            </div>
+                        </form>
+        
+            </div>
+    </div>
+</div>
+
+    
+
+   
+<%- include("partials/footer" )%>

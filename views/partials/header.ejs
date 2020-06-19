@@ -1,0 +1,30 @@
+        <!doctype html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Travelog</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+        
+            <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+        </head>
+        </html>
+          <body  <% if(currentUser){%> class="log" <% }else{%> class="unlog" <%}%>>
+            <% if(currentUser){%>
+            <nav class="navbar navbar-dark">
+                <a class="navbar-brand" href="places/home"><img class="img-nav" src="/img/travelog-logo-white.svg"></a>
+                <div>
+                <span class="text-white user">Hi, <%=currentUser.username%></span>
+                <span class="text-white slash">|</span>
+                <a href="/logout"><span class="text-white logout btn">Logout</span></a>
+            </div>
+            <% }%>
+            
+            </nav>
+                    
+              
+        
+       

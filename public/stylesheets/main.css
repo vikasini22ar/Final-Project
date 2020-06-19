@@ -1,0 +1,275 @@
+
+body{
+   
+    font-family: 'IBM Plex Sans',sans-serif;
+
+}
+.log{
+    background-color:#EEEEEE;
+}
+.unlog{
+    background-color: #0e1331;
+}
+/* styling the register form */
+.container{
+    width: 800px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 8.688rem;
+    margin-bottom: 8.688rem;
+    background-color: white;
+    padding:0px;
+}
+.formpad{
+    padding-left: 56px;
+    padding-top: 40px;
+    padding-bottom: 29px;
+}
+.formlog{
+    margin: 0 auto;
+}
+.controlog{
+    width: 280px;
+    height: 42px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+button.form-control{
+    font-weight: bold;
+    background-color: #0e1331;
+    border: 0px;
+    color: white;
+    size: 12px;
+    font-family: "IBM Plex Sans";
+}
+.bordercol{
+    border-left: 1px solid #D9D9D9;
+}
+.login{
+    max-width:800px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* strating of home page styling */
+.headcontent{
+    width:100%;
+    height:183px;
+    padding:0px;
+    background-color:#0E1331;
+    display: flex;
+}
+.ruler{
+    background-color: #245A99;
+    margin-top:6px;
+    height:49px;
+    vertical-align: middle;
+}
+.img-top{
+    width:35%;
+    float:left;
+}
+#img-content{
+    margin-left:107px;
+    margin-top: 18px;
+}
+.main{
+    /* margin-top:0px; */
+    margin-top:46px;
+    padding-left: 0px;
+}
+#main-1{
+    font-size: 20px;
+    line-height: 1.4;
+    /* margin-bottom:0px; */
+    padding-top:50px;
+    display: inline;
+}
+#main-2{
+    font-size: 30px;
+}
+.selected:hover{
+    color:#55BD84;
+}
+.unselected:hover{
+    color:white;
+}
+.selected{
+    background-color: #245A99;
+    margin-left:118px;
+    color:white;
+    border:0px;
+    font-weight: bold;
+    height:100%;
+    padding-top:13px;
+    outline-style: none;
+}
+.unselected{
+    height:100%;
+    padding-top:13px;
+    background-color: #245A99;
+    margin-left:65px;
+    color:#55BD84;
+    border:0px;
+    outline:none;
+    font-weight: bold;
+}
+.section{
+    margin-left: 119px;
+    margin-right:119px;
+    width:1204px;
+    margin-top: 32px;
+}
+#mode{
+    color:#222C6A;
+    font-size: 26px;
+}
+#addplace{
+    width:7.688rem;
+    height:2.188rem;
+    border-radius: 0px;
+    background-color: #0E1331;
+    font-size: 16px;
+    font-weight:normal;
+    border:0px;
+    color:white;
+}
+.place-img{
+     font-size: 20px;
+    font-weight: bold;
+    color:#222C6A;
+    margin-bottom: 0px;
+}
+.date{
+    font-size: 14px;
+    color:#737FC7;
+    margin-bottom: 0px;
+    padding-bottom: 13px;
+    font-weight: normal;
+}
+.img-thumbnail{
+    border:0px;
+    box-shadow: none;
+    padding:0px;
+    outline: none;
+}
+.card-maker{
+    display:inline-block;
+    max-width:285px;
+    padding:0px;
+    padding-right:8px;
+    margin-right: 12px;
+    height:351px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    
+}
+.card{
+     height:306px;
+     width:100%;
+     padding:22px;
+     border:0px;
+     padding-bottom:30px
+   
+}
+/* ending of home page styling */
+/* start-styling new page */
+.newcontain{
+    padding-right:7.063rem;
+    padding-left:5.875rem;
+    padding-top:3.875rem;
+    padding-bottom: 3.875rem;
+    font-weight:bold;
+}
+.newplace{
+    font-size: 32px; padding-bottom:85px;
+}
+.arrowback{
+    width:20px; font-size: 25; height:21px;margin-right:23px;
+}
+.coladd{
+    background-color: white;
+    /* padding-bottom: 44px; */
+    margin-left:29px;
+}
+.travel{
+    display: none;
+
+}
+.checklab{
+    display: inline;
+    vertical-align: top;
+}
+.checkaddvisit{
+    width:1.375rem;
+    height:1.374rem;
+}
+.checkaddbuc{
+    width:1.375rem;
+    height:1.374rem;
+    margin-left: 60px;
+}
+.controladd-big{
+    width:27.75rem;
+    height:7.603rem;
+    border-radius: 0px;
+}
+#controladd-but{
+    width:7.688rem;
+    height:2.188rem;
+    border-radius: 0px;
+    background-color: #0E1331;
+    font-size: 16px;
+    font-weight:normal;
+}
+.navbar-brand{
+    margin-left: 34px;
+    margin-top: 9px;
+}
+nav{
+    font-size: 16px;
+    background-color: #0E1331;
+}
+.logout{
+    margin-right: 62px;
+    margin-left:30px;
+}
+.user{
+    margin-right:30px;
+}
+.slash{
+    font-size: 20px;
+}
+#addcont{
+    font-size: 24px;
+    color:#0E1331;
+    padding-top: 47px;
+    padding-left:44px;  
+    margin-bottom:0px; 
+    font-weight: 400;
+}
+.formadd{
+    margin:0px auto;
+    padding:44px;
+}
+button.selected{
+    color:white;
+}
+.upper{
+    text-transform: uppercase;
+}
+h3{
+    font-weight: 700;
+}
+#edit-hr{
+    height:1px;
+    color:#979797;
+}
+.but-del:hover{
+    color:#D0021B;
+    
+}
+.info{
+    color:#D0021B;
+    font-weight: bold;
+}

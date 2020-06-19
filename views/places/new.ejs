@@ -1,0 +1,50 @@
+
+<%-include("../partials/header")%>
+<div class="newcontain">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="newplace"><a href="/places/home/visited"><img class="arrowback" src="/img/arrow.svg" ></a>Add Place</p>
+            <img src="/img/travel-illustration.svg" width=653px height=598px>
+        </div>
+        <div class="col-md-5 coladd">
+            <div id="adddet" >
+                <p id="addcont">Add Details about the place where you have visited.</p>
+            <form class="formadd" action="/places/create" method="POST">
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" class="form-control controladd upper" name="place" required>
+                </div>
+                <div class="form-group">
+                    <label>Photo URL</label>
+                    <input type="text" class="form-control controladd" name="image"  required>
+                </div>
+                <div class="form-group">
+                    <label>Few words about this place</label>
+                    <input type="text" class="form-control controladd-big" name="description"  required>
+                </div>
+                <div class="form-group check-l">
+                    <div class="checklab">
+                        <input type="checkbox" value="true" name="visited" class="checkaddvisit checkbox" onclick="traveldisp()" >
+                        <label class="checklab">VISITED</label>
+                    </div>
+                    
+                    <div class="checklab">
+                        <input type="checkbox" name="bucketlist" value="true" class="checkaddbuc checkbox">
+                    </div>
+                    <label class="checklab">BUCKET-LIST</label>
+                </div>
+                <div class="form-group travel">
+                    <label>When did you travel here?</label>
+                    <input type="text" class="form-control  controladd" name="date">
+                </div>
+                 <span class="info">All fields are required</span>
+                <div class="form-group">
+                    <button class="btn btn-dark form-control float-right" id="controladd-but" type="submit">ADD PLACE</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+
+<%-include("../partials/footer")%>
