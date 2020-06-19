@@ -12,7 +12,7 @@
             <form class="formadd" action="/places/<%=place._id%>?_method=PUT" method="POST">
                 <div class="form-group">
                     <label>City</label>
-                    <input type="text" class="form-control controladd upper" name="place" value="<%=place.name%>" required>
+                    <input type="text" class="form-control controladd upper" name="name" value="<%=place.name%>" required>
                 </div>
                 <div class="form-group">
                     <label>Photo URL</label>
@@ -38,12 +38,12 @@
                     <input type="text" class="form-control  controladd" value="<%=place.date%>"  name="date">
                 </div>
                 <div class="form-group">
-                    <a href="/home/places" class="btn but-cancel align-items-right">Cancel</a>
+                    <a href="/places" class="btn but-cancel align-items-right">Cancel</a>
                     <button class="btn btn-dark form-control float-right" id="controladd-but" type="submit">UPDATE PLACE</button>
                 </div>
                 <hr id="edit-hr">
                 <!-- <form action="/home/<%=place._id%>/delete?_method=delete" method="POST"> -->
-                    <a href="/places/<%=place._id%>/delete" class="btn but-del">Delete This Place</a>
+                    <a href="/places/<%=place._id%>/delete" class="btn but-del info">Delete This Place</a>
             </form>
         </div>
         </div>

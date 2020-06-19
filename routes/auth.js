@@ -16,15 +16,23 @@ router.get("/",isLoggedIn ,function(req, res){
 // auth routes
 // ===========
 router.get("/register",function(req, res){
-    res.render("register");
+    res.render("register",{loginError:false,regError:false});
 });
+// login error
+router.get("/register/error",function(req, res){
+    res.render("register",{loginError:true,regError:false});
+})
+// signinerror
+router.get("/register/err",function(req,res){
+    res.render("register",{regError:true,loginError:false});
+})
 // sign up logic
 router.post("/register",function(req,res){
     var newUser=new User({username:req.body.username});
     User.register(newUser,req.body.password, function(err, user){
         if(err){
             console.log(err);
-            return res.render("register")
+            res.redirect("/register/err");
         }else{
             var detail={
                 urname:req.body.urname,
@@ -49,12 +57,12 @@ router.post("/register",function(req,res){
  });
 //  get req to login
  router.get("/login",function(req,res){
-     res.render("register")
+     res.render("register",{loginError:false,regError:false})
  })
 //  login post-req route
 router.post("/login/user",passport.authenticate("local",{
     successRedirect:"/places",
-    failureRedirect:"/register"
+    failureRedirect:"/register/error"
 }),function(req, res){
 
 });

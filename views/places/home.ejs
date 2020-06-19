@@ -12,11 +12,13 @@
 <!-- starting of header content-end -->
 <!-- starting of ruler content -->
     <div class="ruler">
-        <a type="button"  class="btn btnmode selected" href="/places/home/visited">MY VISITED PLACES</a>
-        <a type="button" class="btn btnmode unselected" href="/places/home/bucket">MY BUCKET LIST</a>
+        
+        <a type="button"  class="btn btnmode selected <%if(currentMode){%> visit1 <%}else{%> visit2 <%}%> " href="/places/home/visited">MY VISITED PLACES</a>
+        <a type="button" class="btn btnmode unselected <%if(!currentMode){%>visit1<%}else{%> visit2 <%}%> " href="/places/home/bucket">MY BUCKET LIST</a>
     </div>
     <!-- starting of ruler content-end -->
 <!-- Start-contentof places page -->
+ 
 <div class="section">
 <% if(currentMode){%>
      <p id="mode" >My Visited Places <a type="button" href="/places/new" class="float-right btn" id="addplace">ADD PLACE</a></p>

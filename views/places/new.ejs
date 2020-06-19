@@ -7,20 +7,21 @@
             <img src="/img/travel-illustration.svg" width=653px height=598px>
         </div>
         <div class="col-md-5 coladd">
+            <!-- form to crerate a new place -->
             <div id="adddet" >
                 <p id="addcont">Add Details about the place where you have visited.</p>
-            <form class="formadd" action="/places/create" method="POST">
+            <form class="formadd" action="/places/create" name="myform1"  method="POST">
                 <div class="form-group">
                     <label>City</label>
-                    <input type="text" class="form-control controladd upper" name="place" required>
+                    <input type="text" class="form-control controladd upper" name="name" required >
                 </div>
                 <div class="form-group">
                     <label>Photo URL</label>
-                    <input type="text" class="form-control controladd" name="image"  required>
+                    <input type="text" class="form-control controladd" name="image" required >
                 </div>
                 <div class="form-group">
                     <label>Few words about this place</label>
-                    <input type="text" class="form-control controladd-big" name="description"  required>
+                    <input type="text" class="form-control controladd-big" name="description" required >
                 </div>
                 <div class="form-group check-l">
                     <div class="checklab">

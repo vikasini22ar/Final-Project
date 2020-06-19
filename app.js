@@ -1,3 +1,4 @@
+// importing packages 
 var express=require("express");
 var app=express();
 var bodyParser = require("body-parser");
@@ -22,7 +23,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname+"/public"));
 
-// config passport
+// configure passport
 app.use(require("express-session")({
     secret:"this is a new secret",
     resave: false,
@@ -39,13 +40,12 @@ app.use(methodOverride("_method"));
 // creating a middleware to be executed before the actul function executes
 app.use(function(req, res, next){
     res.locals.currentUser=req.user;
-    res.locals.currentMode="visited";
     next();
 });
 app.use(placesRoutes);
 app.use(authRoutes)
 
-
+// assigning the port value for server to run
   
 app.listen(3500, function(){
     console.log("traveloghope121 app started");
